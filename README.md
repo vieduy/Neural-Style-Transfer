@@ -22,7 +22,7 @@ Nhóm sẽ hướng dẫn chi tiết cách chạy từng mô hình.
  
 Phương pháp baseline này chỉ training một ảnh content với một ảnh style tương ứng.
 ### **Một số kết quả thực nghiệm**
-<img src='result image/baseline result/TF-HUB/chicago.starrynew.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/phongcanh.stars.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/logouit.ocean.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/brad_tit.stars.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/brad_tit.circuit.png' width="200" height="200">
+<img src='result image/baseline result/TF-HUB/chicago.starrynew.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/phongcanh.stars.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/logouit.ocean.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/brad_tit.stars.png' width="200" height="200"> 
 
 
 ## Fast Neural Style 
@@ -43,7 +43,7 @@ Phương pháp baseline này chỉ training một ảnh content với một ản
  - Một số model đã train lưu trong folder models
  
  **Một số hình ảnh sau khi chạy thực nghiệm**
- 
+ <img src='result image/perceptual loss results/2_phongcanh_stars.png' width="200" height="200"> <img src='result image/perceptual loss results/3_logo_uit.png' width="200" height="200"> <img src='result image/perceptual loss results/1_phongcanh.png' width="200" height="200"> <img src='result image/perceptual loss results/chicago.png' width="200" height="200"> 
 
 ## WebDemo
 **WebDemo được xây dựng dựa trên framework Flask.** 

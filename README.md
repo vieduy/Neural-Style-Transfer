@@ -22,7 +22,7 @@ Nhóm sẽ hướng dẫn chi tiết cách chạy từng mô hình.
  
 Phương pháp baseline này chỉ training một ảnh content với một ảnh style tương ứng.
 ### **Một số kết quả thực nghiệm**
-<img src='result image/baseline result/TF-HUB/chicago.starrynew.png' width="500" height="500"> <img src='result image/baseline result/TF-HUB/phongcanh.stars.png'> <img src='result image/baseline result/TF-HUB/logouit.ocean.png'>
+<img src='result image/baseline result/TF-HUB/chicago.starrynew.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/phongcanh.stars.png' width="200" height="200"> <img src='result image/baseline result/TF-HUB/logouit.ocean.png' width="200" height="200">
 
 
 ## Fast Neural Style 

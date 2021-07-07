@@ -1,0 +1,5 @@
+chạy chương trình:
+python neural_style.py --content <content file> --styles <style file> --output <output file>
+<content file> : nơi chứa file ảnh content
+<style file>: nơi chưa file ảnh style
+<output file>: tên file ảnh in ra

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Neural Style Transfer</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+<style>
+.myDiv_1{
+   display: inline-block;
+   text-align:center;
+   float: left;
+   margin-top: 24px;
+}
+
+.myDiv_1 span{
+	text-align: center;
+    background: #ffdede;
+    padding: 6px 10px;
+    display: flex;
+    width: 100px;
+    border: 1px solid #d47c7c;
+    margin: 8px auto;
+}
+
+.myDiv2{
+   display: inline-block;
+   text-align:center;
+   float: left;
+   margin-left: 15px
+}
+
+.myDiv2 span{
+	text-align: center;
+    background: #ffdede;
+    padding: 6px 10px;
+    display: flex;
+    width: 100px;
+    border: 1px solid #d47c7c;
+    margin: 8px auto;
+}
+
+.myDiv{
+    margin-top: 24px;
+	display:none;
+    text-align:center;
+    width: 50%;
+    float: left;
+}
+.myDiv span{
+	text-align: center;
+    background: #ffdede;
+    padding: 6px 10px;
+    display: flex;
+    width: 100px;
+    border: 1px solid #d47c7c;
+    margin: 8px auto;
+}
+
+<!--#showZero{-->
+<!--   color: yellow;-->
+<!--   border:1px solid yellow;-->
+<!--   padding:10px;-->
+<!--}-->
+
+<!--#showOne{-->
+<!--	color:red;-->
+<!--    border:1px solid red;-->
+<!--    padding:10px;-->
+<!--}-->
+<!--#showTwo{-->
+<!--	color:green;-->
+<!--    border:1px solid green;-->
+<!--    padding:10px;-->
+<!--}-->
+<!--#showThree{-->
+<!--   color:blue;-->
+<!--   border:1px solid blue;-->
+<!--   padding:10px;-->
+<!--}-->
+</style>
+<body>
+   {% with messages = get_flashed_messages() %}
+   {% if messages %}
+   <ul class=flashes>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+   </ul>
+   {% endif %}
+   {% endwith %}
+   <nav class="navbar navbar-dark bg-dark ">
+      <a class="navbar-brand navbar-center" href="#">Neural Style Transfer demo</a>
+   </nav>
+
+   <div class="container">
+      <div class="starter-template">
+         <br>
+         <h2>Neural Style Transfer UIT</h2>
+         <p>Upload ảnh lên và enjoy kết quả</p>
+         <p>Max Image Size: 0.5 MB (Nặng quá GPU chạy hong nổi) </p>
+      </div>
+   </div>
+   <div class="container">
+      <form method=post enctype=multipart/form-data>
+         <input type=file name=file onchange="loadFile(event)">
+         <select style="margin-left: 190px" id="myselection" name="comp_select">
+             <option selected="selected">Select Option</option>
+             <option value="One" {% if data.selected =="One" %} selected=selected {% endif %}>Stars</option>
+             <option value="Two" {% if data.selected =="Two" %} selected=selected {% endif %}>Ocean</option>
+             <option value="Three" {% if data.selected =="Three" %} selected=selected {% endif %}>Starry night</option>
+             <option value="Four" {% if data.selected =="Four" %} selected=selected {% endif %}>Circuit</option>
+         </select>
+         <input type=submit value=Transfer class="btn btn-primary">
+      </form>
+      <div id="showZero" class="myDiv_1">
+         <img id="output" width="400" height="400" {% if data %} src="{{data.content_img}}" {% endif %}/><span>Content</span>
+      </div>
+      <div id="showOne" class="myDiv">
+	     <img src="./static/image/stars.png" alt="Stars" width="256" height="256"/><span>Stars</span>
+      </div>
+      <div id="showTwo" class="myDiv">
+          <img src="./static/image/ocean.png" alt="Ocean" width="256" height="256"/><span>Ocean</span>
+      </div>
+      <div id="showThree" class="myDiv">
+          <img src="./static/image/starry_night.jpg" alt="Developer" width="256" height="256"/><span>Starry night</span>
+      </div>
+      <div id="showFour" class="myDiv">
+          <img src="./static/image/circuit.jpg" alt="Developer" width="256" height="256"/><span>Circuit</span>
+      </div>
+      {% if data %}
+      <br>
+      <div class="myDiv2">
+         <img src="{{ data.processed_img }}" width="400" height="400"><span>Result</span>
+      </div>
+      <br>
+      <br>
+   {% endif %}
+   </div>
+
+   <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+   <script>
+   $(document).ready(function(){
+           $("div.myDiv_1").hide();
+           $("#showZero").show();
+   });
+
+   $(document).ready(function(){
+       $('#myselection').on('change', function(){
+           var demovalue = $(this).val();
+           $("div.myDiv").hide();
+           $("#show"+demovalue).show();
+       });
+   });
+   </script>
+</body>
+
+</html>

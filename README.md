@@ -1,3 +1,5 @@
+
+<img src='result image/perceptual loss result/2_UIT_stars.jpg' width="546" height="200"> 
 ##### Môn: CS331.L21
 # ĐỒ ÁN MÔN HỌC: THỊ GIÁC MÁY TÍNH NÂNG CAO
 ### Thành viên

@@ -42,7 +42,7 @@ Phương pháp baseline này chỉ training một ảnh content với một ản
  - Quá trình training xấp xỉ 2 tiếng/style với GPU colab và 4 tiếng /style với CPU colab
  - Một số model đã train lưu trong folder models
  
- **Một số hình ảnh sau khi chạy thực nghiệm**
+ ###**Một số hình ảnh sau khi chạy thực nghiệm**
  <img src='result image/perceptual loss result/2_phongcanh_stars.jpg' width="200" height="200"> <img src='result image/perceptual loss result/3_logo_uit.jpg' width="200" height="200"> <img src='result image/perceptual loss result/1_phongcanh.jpg' width="200" height="200"> <img src='result image/perceptual loss result/chicago.jpg' width="200" height="200"> 
 
 ## WebDemo

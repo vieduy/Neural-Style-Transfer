@@ -43,7 +43,7 @@ Phương pháp baseline này chỉ training một ảnh content với một ản
  - Một số model đã train lưu trong folder models
  
  **Một số hình ảnh sau khi chạy thực nghiệm**
- <img src='result image/perceptual loss results/2_phongcanh_stars.jpg' width="200" height="200"> <img src='result image/perceptual loss results/3_logo_uit.jpg' width="200" height="200"> <img src='result image/perceptual loss results/1_phongcanh.jpg' width="200" height="200"> <img src='result image/perceptual loss results/chicago.jpg' width="200" height="200"> 
+ <img src='result image/perceptual loss result/2_phongcanh_stars.jpg' width="200" height="200"> <img src='result image/perceptual loss result/3_logo_uit.jpg' width="200" height="200"> <img src='result image/perceptual loss result/1_phongcanh.jpg' width="200" height="200"> <img src='result image/perceptual loss result/chicago.jpg' width="200" height="200"> 
 
 ## WebDemo
 **WebDemo được xây dựng dựa trên framework Flask.** 

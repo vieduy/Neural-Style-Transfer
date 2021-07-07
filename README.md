@@ -22,9 +22,8 @@ Nhóm sẽ hướng dẫn chi tiết cách chạy từng mô hình.
  
 Phương pháp baseline này chỉ training một ảnh content với một ảnh style tương ứng.
 ### **Một số kết quả thực nghiệm**
-<img src='result image/baseline result/TF-HUB/chicago.starrynew.png'>
-<img src='result image/baseline result/TF-HUB/phongcanh.stars.png'>
-<img src='result image/baseline result/TF-HUB/logouit.ocean.png'>
+<img src='result image/baseline result/TF-HUB/chicago.starrynew.png'> <img src='result image/baseline result/TF-HUB/phongcanh.stars.png'> <img src='result image/baseline result/TF-HUB/logouit.ocean.png'>
+
 
 ## Fast Neural Style 
 **Trong thư mục perceptual_loss bao gồm những file sau**:

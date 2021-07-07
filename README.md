@@ -1,7 +1,10 @@
 
-<img src='result image/perceptual loss result/2_UIT_stars.jpg' width="546" height="200"> 
+<img src='result image/perceptual loss result/2_UIT_stars.jpg'> 
+
 ##### Môn: CS331.L21
+
 # ĐỒ ÁN MÔN HỌC: THỊ GIÁC MÁY TÍNH NÂNG CAO
+
 ### Thành viên
 1. Hoàng Viễn Duy
 2. Trần Hoàng Việt

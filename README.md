@@ -1,4 +1,9 @@
-# Hướng dẫn sử dụng
+##### Môn: CS331.L21
+# ĐỒ ÁN MÔN HỌC: THỊ GIÁC MÁY TÍNH NÂNG CAO
+### Thành viên
+1. Hoàng Viễn Duy
+2. Trần Hoàng Việt
+3. Nguyễn Anh Khoa
 
 **Trong thư mục drive này sẽ chứa những file như sau**:
 
@@ -9,14 +14,17 @@
  5. Bộ ảnh content và style mà nhóm đã sử dụng
 
 Nhóm sẽ hướng dẫn chi tiết cách chạy từng mô hình.
-# Baseline
+## Baseline
 **Mã nguồn của mô hình này được viết trên TensorFlow**.
 
  1. **Traning:** `python neural_style.py --content <content file> --styles <style file> --output <output file>` 
  2. **Chạy** `python neural_style.py --help` để có thể xem hết phần tham số.
  
 Phương pháp baseline này chỉ training một ảnh content với một ảnh style tương ứng.
-**Một số kết quả thực nghiệm** ![](https://drive.google.com/file/d/15QEQnyprRv6HSLYWECqGkm-P7VNCKTV2)
+### **Một số kết quả thực nghiệm**
+<img src='result image/baseline result/TF-HUB/chicago.starrynew.png'>
+<img src='result image/baseline result/TF-HUB/phongcanh.stars.png'>
+<img src='result image/baseline result/TF-HUB/logouit.ocean.png'>
 
 ## Fast Neural Style 
 **Trong thư mục perceptual_loss bao gồm những file sau**:

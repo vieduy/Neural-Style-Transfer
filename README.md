@@ -57,8 +57,7 @@ Phương pháp baseline này chỉ training một ảnh content với một ản
 <img src='result image/perceptual loss result/web_1.png'> <img src='result image/perceptual loss result/web_2.png'> 
 
 ## So sánh kết quả giữa các mô hình
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+<img src='result image/perceptual loss result/Screenshot from 2021-07-07 15-58-10.png'> 
 
 # Tài liệu tham khảo
 

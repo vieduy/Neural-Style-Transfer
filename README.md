@@ -61,6 +61,11 @@ Phương pháp baseline này chỉ training một ảnh content với một ản
 
 # Tài liệu tham khảo
 
- 1. https://github.com/PaddlePaddle/PaddleGAN
- 2. https://github.com/rrmina/fast-neural-style-pytorch
- 3. https://github.com/anishathalye/neural-style
+1. A neural algorithm of artistic style (https://arxiv.org/abs/1508.06576)
+2. Perceptual Losses for Real-Time Style Transfer and Super-Resolution (https://arxiv.org/abs/1603.08155)
+3. Drafting and Revision: Laplacian Pyramid Network for Fast High-Quality Artistic Style Transfer (https://arxiv.org/pdf/2104.05376.pdf)
+4. https://viblo.asia/p/bien-anh-cua-ban-thanh-cac-tac-pham-hoi-hoa-voi-neural-style-transfer-WAyK8dXoKxX
+5. https://towardsdatascience.com/perceptual-losses-for-real-time-style-transfer-and-super-resolution-637b5d93fa6d
+6. https://github.com/rrmina/fast-neural-style-pytorch
+7. https://github.com/PaddlePaddle/PaddleGAN/blob/develop/docs/en_US/tutorials/lap_style.md
+8. https://www.youtube.com/watch?v=VQEMptfWpLk
